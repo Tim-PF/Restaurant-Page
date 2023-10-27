@@ -1,12 +1,14 @@
 import { myHome } from './home';
 import { myMenu } from './menu';
 import { myContact } from './contact';
+import './style.css';
 
+myHome();
 createTabs();
 
 function createTabs() {
  
-
+const navbar = document.querySelector('#header')
 
 //Create Tabs
  const homeTab  = document.createElement('div');
@@ -40,9 +42,9 @@ contactTab.addEventListener('click', () => {
 
  // Append to body
 
- document.body.appendChild(homeTab)
- document.body.appendChild(menuTab)
- document.body.appendChild(contactTab)
+navbar.appendChild(homeTab)
+navbar.appendChild(menuTab)
+navbar.appendChild(contactTab)
 
 }
 

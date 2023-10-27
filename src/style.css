@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Italian';
+    src: url('./assets/fonts/italianno-regular-webfont.woff2') format('woff2'),
+      url('./assets/fonts/italianno-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+body, html {
+    height:100%;
+    font-family: 'Italian';
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+    overflow: hidden;
+    
+}
+
+#header {
+    font-family: 'Italian';
+    font-size: 40px;
+    display:flex;
+    height:75px;
+    justify-content:center;
+    align-items: center;
+    color: black;
+}
+
+#header div {
+    padding: 10px;
+    margin: 15px;
+}
+
+#header div:hover{
+    transition: 0.5s;
+    color: orange;
+}
+
+.homepage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vH;
+    background: rgba(0, 0, 0, .7) url(./assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-blend-mode: darken;
+    
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    height:600px;
+    width: 70%;
+
+}
+.center img {
+    height: 300px;
+    margin: 0px 20px;
+}
+
+.nameContainer, h1, h3, h4 {
+    margin:0px
+}
+
+.name-container {
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    
+}
+
+.bottomText {
+    font-size: 32px;
+    font-weight:800;
+}
+
+.textInfo {
+    position:relative;
+    z-index: 1;
+}
+
+.textInfo:before {
+    content: "";
+    display:block;
+    width:170px;
+    height:4px;
+    background: #ffffff;
+    position:absolute;
+    left: -60%;
+    top: 50%;
+    z-index: 0;
+}
+
+.textInfo:after {
+    content: "";
+    display:block;
+    width:170px;
+    height:4px;
+    background: #ffffff;
+    position:absolute;
+    right: -60%;
+    top: 50%;
+}
+
+.subTitle {
+    color:orange;
+    font-size: 38px
+}
+
+
+.titleContainer {
+   
+    font-size: 90px;
+}
+
+ .titleContainer {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top:60%;
+    }
+
+    to {
+        margin-top:0%;
+    }
+}
